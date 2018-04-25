@@ -1,0 +1,22 @@
+mutation {
+  vtex_checkout_0_2_1_saveSettings(settings: {
+
+    vtex_checkout_0_2_1_minimumValueAccumulated: 3
+    vtex_checkout_0_2_1_minimumQuantityAccumulatedForItems: 2
+    vtex_checkout_0_2_1_decimalDigitsPrecision: 2
+  }) {
+    vtex_checkout_0_2_1_minimumValueAccumulated
+    vtex_checkout_0_2_1_minimumQuantityAccumulatedForItems
+    vtex_checkout_0_2_1_decimalDigitsPrecision
+    }
+}
+
+
+
+{
+  vtex_checkout_0_2_1_getSettings {
+    vtex_checkout_0_2_1_minimumQuantityAccumulatedForItems
+    vtex_checkout_0_2_1_decimalDigitsPrecision
+    vtex_checkout_0_2_1_minimumValueAccumulated
+  }
+}

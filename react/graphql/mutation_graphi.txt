@@ -1,0 +1,20 @@
+mutation {
+  vtex_checkout_0_2_1_saveSettings(settings: {
+    vtex_checkout_0_2_1_minimumValueAccumulated: 1
+    vtex_checkout_0_2_1_minimumQuantityAccumulatedForItems: 1
+    vtex_checkout_0_2_1_decimalDigitsPrecision: 1
+    vtex_checkout_0_2_1_paymentConfiguration: {
+      vtex_checkout_0_2_1_requiresAuthenticationForPreAuthorizedPaymentOption: true
+    }
+    vtex_checkout_0_2_1_taxConfiguration: {
+      vtex_checkout_0_2_1_url: "http://abc.com"
+      vtex_checkout_0_2_1_authorizationHeader: "123456"
+      vtex_checkout_0_2_1_allowExecutionAfterErrors: true
+      vtex_checkout_0_2_1_integratedAuthentication: true
+    }
+    }
+  ) {
+    vtex_checkout_0_2_1_minimumQuantityAccumulatedForItems
+    vtex_checkout_0_2_1_decimalDigitsPrecision
+    vtex_checkout_0_2_1_minimumValueAccumulated
+  }}

@@ -1,5 +1,9 @@
 {
   "pages": {
+    "settings": {
+      "path": "/checkout-settings",
+      "theme": "theme"
+    },
     "checkout": {
       "path": "/legacy-extensions/checkout",
       "disableExternals": ["tachyons"],
@@ -11,6 +15,9 @@
     }
   },
   "extensions": {
+    "settings": {
+      "component": "index"
+    },
     "checkout/buttons": {
       "component": "vtex.render-runtime/ExtensionContainer"
     },

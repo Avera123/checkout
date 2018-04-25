@@ -1,0 +1,16 @@
+mutation saveSettings($settings: SettingsInput) {
+  saveSettings(settings: $settings) {
+    paymentConfiguration {
+      requiresAuthenticationForPreAuthorizedPaymentOption,
+    },
+    minimumQuantityAccumulatedForItems,
+    decimalDigitsPrecision,
+    minimumValueAccumulated,
+    taxConfiguration {
+      url,
+      authorizationHeader,
+      allowExecutionAfterErrors,
+      integratedAuthentication,
+    }
+  }
+}

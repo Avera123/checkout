@@ -1,0 +1,16 @@
+query {
+  vtex_checkout_0_2_1_getSettings {
+    vtex_checkout_0_2_1_minimumValueAccumulated
+    vtex_checkout_0_2_1_minimumQuantityAccumulatedForItems
+    vtex_checkout_0_2_1_decimalDigitsPrecision
+    vtex_checkout_0_2_1_paymentConfiguration {
+      vtex_checkout_0_2_1_requiresAuthenticationForPreAuthorizedPaymentOption
+    }
+    vtex_checkout_0_2_1_taxConfiguration {
+      vtex_checkout_0_2_1_url
+      vtex_checkout_0_2_1_authorizationHeader
+      vtex_checkout_0_2_1_allowExecutionAfterErrors
+      vtex_checkout_0_2_1_integratedAuthentication
+    }
+  }
+}

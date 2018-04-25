@@ -1,0 +1,16 @@
+query {
+  getSettings {
+    paymentConfiguration {
+      requiresAuthenticationForPreAuthorizedPaymentOption,
+    },
+    minimumQuantityAccumulatedForItems,
+    decimalDigitsPrecision,
+    minimumValueAccumulated,
+    taxConfiguration {
+      url,
+      authorizationHeader,
+      allowExecutionAfterErrors,
+      integratedAuthentication,
+    }
+  }
+}

@@ -1,0 +1,45 @@
+type Query {
+  getSettings: Settings!
+}
+
+type Mutation {
+  saveSettings(settings: SettingsInput): Settings
+}
+
+type Settings {
+  paymentConfiguration: Payment!
+  minimumQuantityAccumulatedForItems: Int!
+  decimalDigitsPrecision: Int!
+  minimumValueAccumulated: Int!
+  taxConfiguration: Tax!
+}
+
+input SettingsInput {
+  paymentConfiguration: PaymentInput!
+  minimumQuantityAccumulatedForItems: Int!
+  decimalDigitsPrecision: Int!
+  minimumValueAccumulated: Int!
+  taxConfiguration: TaxInput!
+}
+
+type Payment {
+  requiresAuthenticationForPreAuthorizedPaymentOption: Boolean!
+}
+
+input PaymentInput {
+  requiresAuthenticationForPreAuthorizedPaymentOption: Boolean!
+}
+
+type Tax {
+  url: String!
+  authorizationHeader: String!
+  allowExecutionAfterErrors: Boolean!
+  integratedAuthentication: Boolean!
+}
+
+input TaxInput {
+  url: String!
+  authorizationHeader: String!
+  allowExecutionAfterErrors: Boolean!
+  integratedAuthentication: Boolean!
+}
